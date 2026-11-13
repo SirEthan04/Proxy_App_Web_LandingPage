@@ -471,6 +471,29 @@ a {
     gap: 5rem;
 }
 
+.platform-image {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.platform-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .platform-image {
+        width: 100%;
+    }
+}
+
 .platform-row:last-child {
     margin-bottom: 0;
 }
